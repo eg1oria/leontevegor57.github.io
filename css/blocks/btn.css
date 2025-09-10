@@ -1,0 +1,33 @@
+.btn {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 28px;
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 16px;
+    margin: auto 0 0 0;
+    text-align: center;
+}
+
+.delivery-form__contacts-btn {
+    background-color: rgba(135, 242, 154, 1);
+    border: none;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 100px 0;
+    height: 100%;
+    width: 286px;
+    font-family: "Press Start 2P";
+    border-radius: 40px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.delivery-form__contacts-btn:hover {
+    background-color: rgba(120, 223, 138, 1);
+}

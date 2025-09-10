@@ -1,0 +1,189 @@
+.delivery-form__details {
+    background-color: #fff;
+    z-index: 2;
+}
+
+.delivery-form__wrap:not(:first-child) {
+    padding: 80px 0;
+}
+
+.delivery-form__wrap__color-white {
+    background-color: #fff;
+    position: relative;
+}
+
+.delivery-form__details .title-check {
+    color: #87F29A;
+    background-color: #000;
+}
+
+.delivery-form__details legend {
+    color: #000;
+}
+
+.arrow-icon {
+    position: absolute;
+    color: #000;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 4;
+}
+
+.card-list {
+    display: flex;
+    gap: 27px;
+    padding: 0;
+    margin: 0;
+}
+
+.card-list__item {
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    width: 33.33%;
+    overflow: hidden;
+    min-height: 664px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-info__img {
+    width: 100%;
+    height: 245px;
+}
+
+.card-info__content {
+    padding: 0 29px 30px 29px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info__title {
+    font-family: "Press Start 2P";
+    color: #000;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0 0 12px 0;
+}
+
+.card-info__text {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 24px 0;
+}
+
+.card-info__stats-item {
+    display: flex;
+    gap: 8px;
+}
+
+.card-info__percent {
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 8px 0;
+    background-color: rgba(175, 163, 255, 1);
+    padding: 2px 8px;
+    border-radius: 12px;
+    align-items: center;
+
+}
+ 
+.card-info__subtitle {
+    margin: 0;
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.card-info--color-blue .card-info__percent {
+    background-color: #AFA3FF;
+}
+
+.card-info--color-blue .card-info__title-blue {
+    color: #AFA3FF;
+}
+
+.card-info--color-green .card-info__percent {
+    background-color: #87F29A;
+}
+
+.card-info__title-green {
+    color: #87F29A;
+}
+
+.card-info--color-orange .card-info__percent {
+    background-color: #FFC61F;
+}
+
+.card-info__title-orange {
+    color: #FFC61F;
+}
+
+.card-info:active {
+    background-color: rgba(18, 28, 37, 1);
+}
+
+.card-info--color-green {
+    background-color: rgba(18, 28, 37, 1);
+}
+
+.card-info--color-green .card-info__title {
+    color: #FFFFFF;
+}
+
+.card-info--color-green .card-info__text {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.card-info--color-green .card-info__subtitle {
+    color: #FFFFFF;
+}
+
+.card-list__item:active .card-info__title {
+    color: #FFFFFF;
+}
+
+.card-list__item:active .card-info__text {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.card-list__item:active .card-info__subtitle {
+    color: #FFFFFF;
+}
+
+.card-list__item:active .btn--blue {
+    background-color: #AFA3FF;
+}
+
+.card-list__item .btn--green {
+    background-color: #87F29A;
+}
+
+.card-list__item:active .btn--orange {
+    background-color: #FFC61F;
+}
+
+.btn--blue:hover {
+    background-color: #998CF1;
+}
+
+.btn--green:hover {
+    background-color: #78DF8A;
+}
+
+.btn--orange:hover {
+    background-color: #F2B913;
+}

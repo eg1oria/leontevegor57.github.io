@@ -1,0 +1,51 @@
+.radio {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+
+.radio input {
+    display: none;
+}
+
+.radio label:hover {
+    color: rgba(135, 242, 154, 1);
+    user-select: none;
+} 
+
+.radio label {
+    position: relative;
+    padding-left: 48px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.radio label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.radio input:checked {
+    color: rgba(135, 242, 154, 1);
+}
+
+.radio input:checked + label::before {
+    background: #000;
+    border: 9px solid rgba(135, 242, 154, 1);
+    
+}
+
+.radio input:checked + label {
+    color: #FFFFFF;
+}

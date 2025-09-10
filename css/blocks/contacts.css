@@ -1,0 +1,105 @@
+.delivery-form__contacts-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 128px;
+    gap: 24px;
+    flex-grow: 1;
+}
+
+.delivery-form__contacts-input {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    width: 100%;
+    padding: 16px 16px 16px 52px;
+    height: 100%;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.delivery-form__contacts-item--error .delivery-form__contacts-input{
+    background-color: rgba(255, 117, 117, 0.15);
+}
+
+.delivery-form__contacts-content {
+    display: flex;
+    gap: 40px;
+}
+
+.delivery-form__contacts-input:hover {
+    background-color: rgba(111, 181, 130, 0.15);
+}
+
+.delivery-form__contacts-input:focus {
+    background-color: rgba(111, 181, 130, 0.15);
+    outline: none;
+}
+
+.delivery-form__contacts-item {
+    position: relative;
+}
+
+.delivery-form__contacts-item--flat {
+    grid-column: span 2;
+    position: relative;
+}
+
+.delivery-form__contacts-item--row {
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.delivery-form__contacts-mail {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FF7575;
+    pointer-events: none;
+}
+
+.delivery-form__contacts-phone {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FF7575;
+    pointer-events: none;
+}
+
+.delivery-form__contacts-comment {
+    position: absolute;
+    left: 16px;
+    top: 19px;
+    pointer-events: none;
+}
+
+.delivery-form__contacts-input:hover + .delivery-form__contacts-mail {
+    color: #87F29A;
+}
+
+.delivery-form__contacts-input:hover + .delivery-form__contacts-phone {
+    color: #87F29A;
+}
+
+.delivery-form__contacts-input:hover + .delivery-form__contacts-comment {
+    color: #87F29A;
+}
+
+.delivery-form__contacts-input:focus + .delivery-form__contacts-comment {
+    color: #87F29A;
+}
+
+.delivery-form__contacts-input:focus + .delivery-form__contacts-phone {
+    color: #87F29A;
+}
+
+.delivery-form__contacts-input:focus + .delivery-form__contacts-mail {
+    color: #87F29A;
+}
